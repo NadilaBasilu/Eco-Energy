@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor - Nadila Basilu</title>
+
+     <link rel="stylesheet" href="pageEditor.css">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="nav.css">
+     <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <div class="nav-section">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/ecoenergy_logo_transparent.png" alt="eco energy logo">
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-items">
+                <li><a href="home.html">Home</a></li>
+                
+                <li class="dropdown">
+                    <a>Explore & More ▾</a>
+                    <div class="dropdown-content">
+                        <a href="feedback.html">Feedback</a>
+                        <a href="table.html">Table</a>
+                        <a href="team.html">Our Team</a>
+                        <a href="sitemap.html">Sitemap</a>
+                        <div class="sub-dropdown">
+                            <a>Articles ▾</a>
+                            <div class="sub-dropdown-content">
+                                <a href="content_ST1.html">Article 1</a>
+                                <a href="content_ST2.html">Article 2</a>
+                                <a href="content_ST3.html">Article 3</a>
+                                <a href="content_ST4.html">Article 4</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li><a href="volunteer.html">Volunteer</a></li>
+                
+                <li><a href="team.html">Team</a></li>
+            </ul>
+            
+            <div class="nav-buttons">
+                <a href="volunteer.html" class="btn btn-outline">Join Us</a>
+                <a href="profile.html" class="btn btn-primary">Dashboard</a>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="overlay"></div>
+     
+   <div class="main">
+
+    
+        <div class="user-details">
+            <div class="user-details-section card">
+                <img src="assets/images/profile4.JPG" alt="profile">
+                <div class="user-meta-data">
+                    <p class="user-title">Nadila Basilu Weerasekara</p>
+                    <p class="user-id">UOW ID - W2120163</p>
+                    <p class="user-code">IIT ID - 20240061</p>
+                </div>
+            </div>
+        </div>
+    
+
+
+    <div class="container">
+
+        <!-- Main content area -->
+
+        <main>            
+            <section>
+                <h2 id="userprofile">User Profile</h2>
+                    <h3>Technical Description</h3>
+                        <p>With the use of the transform property, I created a hover effect on all the cards as well as the images,
+                             except for the profile picture. The Choose Profile Picture button opens File Explorer on your computer. 
+                             When the text areas in the sections goals, experiences, and contact me are clicked, the border turns green.
+                              I used the pseudo-class focus to achieve this. You can also type in these text areas, but they will not 
+                              be saved.  By setting the input type to date and month, the volunteering availability text box opens a 
+                              calendar. In the Contact Me section, a message pops up when the name and email boxes are not filled 
+                              correctly. This was done by changing the input type to text and email, respectively. I used blank to 
+                              achieve this. The send button has a hover effect where it changes colour and scales up, but here, the 
+                              pseudo-class hover is used instead of the transform property. I used the @media method and Flexbox to 
+                              create a responsive webpage.</p> <br>
+                    
+                    <h3>Accessibility</h3>
+                        <p>To improve accessibility, I ensured that interactive elements, such as buttons and form fields, are clearly visible 
+                            and easy to navigate. I used semantic HTML elements, like  "button", "input", and "textarea", to ensure proper screen
+                                 reader support. Additionally, I applied focus states for form fields to help keyboard users clearly see which element 
+                                 is active. The "Choose Profile Picture" button is clearly labeled, and the text areas in the "Goals," "Experiences," and 
+                                 "Contact Me" sections have proper focus indicators. For error messages in the Contact Me section, I made sure that screen 
+                                 readers announce them, ensuring that users with disabilities can easily navigate and interact with the form. The page is 
+                                 also designed to be responsive, improving accessibility on different devices.</p>
+                    
+                        
+                                 <button type="button" onclick="location.href='validation_ST4.html#userVal'">Back to Page Validation</button>
+                                 <button type="button" onclick="location.href='profile.html'">Back to User Profile</button>
+                    
+            </section>
+
+  
+            <section>
+                <h2 id="sitemap">SiteMap</h2>
+                    <h3>Technical Description</h3>
+                        <p>This code creates a responsive Sitemap layout using SVG (Scalable Vector Graphics) within an HTML structure. 
+                            The sitemap is designed with interactive elements that allow users to navigate to different sections of a 
+                            website by clicking on them. The visual design is enhanced by CSS styling, which controls the appearance 
+                            and interactive behavior of the SVG elements.
+                            The SVG element is used to create a scalable map that automatically adjusts to the container's width and 
+                            height, ensuring the sitemap remains responsive across different screen sizes. Inside the SVG, various
+                             rectangular nodes represent different website sections like the Splash Screen, Home, Content, Table, User
+                              Profile, and others. These nodes are defined using the "rect" tag and are linked to specific sections 
+                              using the "a" element with the xlink:href attribute, which allows the user to click and navigate to the 
+                              relevant pages.
+                            Each clickable area has CSS styles that provide visual feedback. When hovered over, the nodes change to 
+                            a dark blue color, and the text within them switches to white, creating a smooth transition effect. Grid 
+                            lines, drawn using the "line" tag, further organize the layout and separate different parts of the sitemap.
+                             At the bottom of the map, team sections link to individual pages, with each section representing a team member’s name.
+                              ARIA labels are used for accessibility, ensuring the elements are described for screen readers. The layout has a clean, 
+                              modern design with rounded corners, box shadows, and smooth transitions, ensuring it is visually appealing and functional 
+                              across all devices.</p> <br>
+                    
+                    <h3>Accessibility</h3>
+                        <p>To ensure accessibility in the sitemap, I implemented ARIA labels and roles for all interactive elements within the SVG, such as the 
+                            clickable nodes, to provide clear descriptions for screen readers. Each node is linked to a specific section using the "a" element 
+                            with the "xlink:href" attribute, and these links are made accessible by using appropriate alt text. The color contrast between the 
+                            text and background is optimized for visibility, and hover states are designed to be visually clear, enhancing the navigation experience.
+                             Additionally, the layout is responsive, ensuring that the sitemap is easy to use on devices of various screen sizes, and the design remains 
+                             accessible to all users, including those with visual or motor impairments.</p>
+                    
+                             <button type="button" onclick="location.href='validation_ST4.html#sitemapVal'">Back to Page Validation</button>
+                             <button type="button" onclick="location.href='sitemap.html'">Back to SiteMap</button>
+                        
+                    </section>
+            
+            <section>
+                <h2 id="content">Content page</h2>
+                    <h3>Technical Description</h3>
+                        <p>I was able to create a responsive web page using Flexbox. It should be pointed out 
+                            the icons such as the thumbs do not respond.</p> <br>
+                    
+                    <h3>Accessibility</h3>
+                        <p>With the use of aria labels and setting the lang to English visually impaired individuals 
+                            can utilize the screen reader on these web pages. The units of measurements used are %, px, vh which are 
+                            responsive and supported by other web browsers</p>
+
+
+                            <button type="button" onclick="location.href='validation_ST4.html#contentVal'">Back to Page Validation</button>
+                             <button type="button" onclick="location.href='content_ST4.html'">Back to Content Page</button>
+                        
+                        
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>One of the major challenges I faced during this project was managing my time effectively. I had to prioritize tasks
+                         and create a schedule to make sure I could complete the website on time.
+                        Ensuring proper layout design, making the site responsive across different devices, 
+                        and debugging CSS issues were time-consuming. Achieving a smooth and consistent design while incorporating the right elements for user interaction was another challenge. However, by researching online resources and practicing different techniques, I was able to overcome these obstacles and complete the project.</p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>My team and I have adhered to the Janet regulations for web publication. There is no transmission or creation of obscene, derogatory
+                         or offensive material or materials of a threatening nature. We have not committed copyright infringement or used our website to hack 
+                         or spam our users. We are well aware that we are under a legal obligation to do so.</p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Last accessed: 9 Mar 2025).</li>
+                        <li>Pixabay (2023) <i>Pixabay.</i> Available at: <a href="https://pixabay.com/ ">https://pixabay.com/ </a> (Last accessed: 10 Mar 2025).</li>
+                        <li>W3Schools (2025) <i>W3Schools.</i> Available at: <a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a> (Last accessed: 9 Mar 2025).</li>
+
+                    </ul>
+            </section>
+
+
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+            <ul class="top-level-ul">
+                
+                <li>Student 4</li>
+                    <ul> 
+                        <li><a href="#userprofile">User Profile</a></li>
+                        <li><a href="#sitemap">SiteMap</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+               
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="logo-section">
+    
+                <img src="assets/images/ecoenergy_logo_transparent.png" alt="Eco Energy Logo">
+    
+            </div>
+    
+            <div class="footer-section">
+    
+                <h3>Articles</h3>
+                <ul>
+                    <li><a href="content_ST1.html">Renewable Energy</a></li>
+                    <li><a href="content_ST3.html">Non-renewable Energy</a></li>
+                    <li><a href="content_ST4.html">Emerging and Alternative Energy</a></li>
+                    <li><a href="content_ST2.html">Why is Nuclear Energy Considered Clean Energy</a></li>
+                </ul>
+    
+            </div>
+    
+            <div class="footer-section">
+                <h3>Sustainability</h3>
+                <ul>
+                    <li><a href="https://www.globalgoals.org/" target="_blank">UN Global Goals</a></li>
+                    <li><a href="https://www.unep.org/topics/sustainable-development-goals/why-do-sustainable-development-goals-matter/goal-7-affordable" target="_blank">Clean and Affordable Energy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>About founders</h3>
+                <ul>
+                    <li><a href="team.html">Nadila Weerasekara</a></li>
+                    <li><a href="team.html">Amaya Pitawela</a></li>
+                    <li><a href="team.html">Gethmi Goonewardena</a></li>
+                    <li><a href="team.html">Mahima Sanketh</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Volunteer</h3>
+                <ul>
+                    <li><a href="#">Seminar</a></li>
+                    <li><a href="#">Workshops</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-section">
+                <h3>Contacts - HQ</h3>
+                <ul>
+                    <li>+45 93 250 207</li>
+                    <li>ecoenergy@gmail.lk</li>
+                    <li>Eco Energy Pvt(Ltd)</li>
+                    <li>Colombo, Sri Lanka</li>
+                </ul>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <p>© 2025 - All rights reserved by Green Energy Group ApS. CVR no. 06459104/4</p>
+                <a href="#">Cookies</a>
+                <a href="#">Privacy policy</a>
+            </div>
+            
+        </div>
+    </footer>
+
+   </div>
+
+   <script src="navbar.js"></script>
+    
+</body>
+</html>

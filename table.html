@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Table on Energy sources</title>
+    <link rel="stylesheet" href="table_css.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+  </head>
+
+  <body>
+    <div class="nav-section">
+      <nav class="navbar">
+
+          <div class="logo">
+              <img src="assets/images/ecoenergy_logo_transparent.png" alt="eco energy logo">
+          </div>
+          
+          <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          
+          <ul class="nav-items">
+              <li><a href="home.html">Home</a></li>
+              
+              <li class="dropdown">
+                  <a>Explore & More ▾</a>
+                  <div class="dropdown-content">
+                      <a href="feedback.html">Feedback</a>
+                      <a href="table.html">Table</a>
+                      <a href="team.html">Our Team</a>
+                      <a href="sitemap.html">Sitemap</a>
+                      <div class="sub-dropdown">
+                          <a>Articles ▾</a>
+                          <div class="sub-dropdown-content">
+                              <a href="content_ST1.html">Article 1</a>
+                              <a href="content_ST2.html">Article 2</a>
+                              <a href="content_ST3.html">Article 3</a>
+                              <a href="content_ST4.html">Article 4</a>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              
+              <li><a href="volunteer.html">Volunteer</a></li>
+              
+              <li><a href="team.html">Team</a></li>
+          </ul>
+          
+          <div class="nav-buttons">
+              <a href="volunteer.html" class="btn btn-outline">Join Us</a>
+              <a href="profile.html" class="btn btn-primary">Dashboard</a>
+          </div>
+      </nav>
+  </div>
+  
+  <div class="overlay"></div>
+
+    <main>
+      <div class="about-table">
+
+        <h1> Energy sources and their differences  </h1>
+
+        <p>
+          the chart given below represents different energy sources.<br>
+          the following table compares efficiency of turning the fuel into energy,
+          whether the cost per kWh is low, level of carbon emmision and can it 
+          supply continously along with the lifespan of the infrastructure.
+          <br>
+          <strong> You can also click on the energy source for additionally information.</strong>
+          <br><br>
+        </p>
+      </div>
+
+      <table>
+
+        <tr class="table-header">
+
+          <!-- this is the horizontal header -->
+
+          <th class="logo-header" colspan="2" ><img src="assets/images/ecoenergy_logo_black.png" alt="ecoenergy logo"></th>
+          <th><img src="assets/images/efficiency.png" alt="Efficiency icon"><br>Efficiency<br>(above 50%)</th>
+          <th><img src="assets/images/cost-per-kW.png" alt="Cost per kWh icon"><br>Cost per<br>kWh ($)</th>
+          <th><img src="assets/images/co2-emmision.png" alt="Low CO2 emmission icon"><br>Low<br>carbon emmision</th>
+          <th><img src="assets/images/reliable.png" alt="Reliable icon"><br>Reliable</th>
+          <th class="lifespan_icon"><img src="assets/images/lifespan.png" alt="lifespan icon"><br>Lifespan</th>
+        </tr>
+
+        <tr>
+
+          <!-- this is the vertical header -->
+
+          <th rowspan="10" class="header">Energy source</th>
+
+          <!-- link the solar energy part of the renewable energy here-->
+          <td class="energy-cell">
+            <a href="content_ST1.html"><img class="energy-image" src="assets/images/solar-energy.png" alt="solar energy icon (read more link)"><br>Solar Energy</a>
+          </td>
+          <td class="tick or cross"><img src="assets/images/cross.png" alt="cross"></td>
+          <td>0.03 - 0.10</td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td class="tick or cross"><img src="assets/images/cross.png" alt="cross"></td>
+          <td>25 - 30 years</td>
+
+        </tr>
+
+        <tr>
+
+          <!-- link the wind energy part of the renewable energy here-->
+          <td class="energy-cell">
+            <a href="content_ST1.html"><img class="energy-image" src="assets/images/wind-energy.png" alt="Wind energy icon (read more link)"><br>Wind Energy</a>
+          </td>
+          <td class="tick or cross"><img src="assets/images/cross.png" alt="cross"></td>
+          <td>0.02 - 0.07</td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td class="tick or cross"><img src="assets/images/cross.png" alt="cross"></td>
+          <td>20 - 25 years</td>
+
+        </tr>
+
+        <tr>
+
+          <!-- link the hydropower part of the renewable energy here-->
+          <td class="energy-cell">
+            <a href="content_ST1.html"><img class="energy-image" src="assets/images/hydropower.png" alt="Hydropower icon (read more link)"><br>Hydropower</a> 
+          </td>
+          <td class="tick or cross"><img src="assets/images/cross.png" alt="cross"></td>
+          <td>0.02 - 0.08</td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td>50 - 100 years</td>
+
+        </tr>
+
+        <tr>
+
+          <!-- link the geothermal energy part of the alternative renewable energy here-->
+          <td class="energy-cell">
+            <a href="content_ST4.html"><img class="energy-image" src="assets/images/geothermal.png" alt="Geothermal energy icon (read more link)"><br>Geothermal energy</a>
+          </td>
+          <td class="tick or cross"><img src="assets/images/cross.png" alt="cross"></td>
+          <td>0.03 - 0.07</td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td>30 - 50 years</td>
+
+        </tr>
+
+        <tr>
+
+          <!-- link the biomass energy part of the renewable energy here-->
+          <td class="energy-cell">
+            <a href="content_ST1.html"><img class="energy-image" src="assets/images/biomass.png" alt="Biomass energy icon (read more link)"><br>Biomass Energy</a>
+          </td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td>0.06 - 0.12</td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td>20 - 30 years</td>
+
+        </tr>
+
+        <tr>
+
+          <!-- link the wave energy part of the renewable energy here-->
+          <td class="energy-cell">
+            <a href="content_ST1.html"><img class="energy-image" src="assets/images/wave.png" alt="Wave energy icon (read more link)"><br>Wave Energy</a>
+          </td>
+          <td class="tick or cross"><img src="assets/images/cross.png" alt="cross"></td>
+          <td>0.06 - 0.20</td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td class="tick or cross"><img src="assets/images/cross.png" alt="cross"></td>
+          <td>20 - 30 years</td>
+
+        </tr>
+
+        <tr>
+
+          <!-- link the coal energy part of the non-renewable energy here-->
+          <td class="energy-cell">
+            <a href="content_ST3.html"><img class="energy-image" src="assets/images/coal.png" alt="Coal energy icon (read more link)"><br>Coal energy</a>
+          </td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td>0.05 - 0.15</td>
+          <td class="tick or cross"><img src="assets/images/cross.png" alt="cross"></td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td>40 - 60 years</td>
+
+        </tr>
+
+        <tr>
+
+          <!-- link the natural gas energy part of the non-renewable energy here-->
+          <td class="energy-cell">
+            <a href="content_ST3.html"><img class="energy-image" src="assets/images/natural-gas.png" alt="Natural Gas icon (read more link)"><br>Natural Gas</a>
+          </td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td>0.04 - 0.07</td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td>30 - 50 years</td>
+
+        </tr>
+
+        <tr>
+
+          <!-- link the petrol part of the non-renewable energy here-->
+          <td class="energy-cell">
+            <a href="content_ST3.html"><img class="energy-image" src="assets/images/oil.png" alt="Petroleum icon (read more link)"><br>Petroleum</a>
+          </td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td>0.07 - 0.20</td>
+          <td class="tick or cross"><img src="assets/images/cross.png" alt="cross"></td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td>30 - 40 years</td>
+
+        </tr>
+        
+        <tr>
+
+          <!-- link this to the content page i made-->
+          <td class="energy-cell">
+            <a href="content_ST2.html"><img class="energy-image" src="assets/images/nuclear.png" alt="Nuclear energy icon (read more link)"><br>Nuclear Energy</a>
+          </td>
+          <td class="tick or cross"><img src="assets/images/cross.png" alt="cross"></td>
+          <td>0.09 - 0.12</td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td class="tick or cross"><img src="assets/images/tick.png" alt="tick"></td>
+          <td>40 - 80 years</td>
+
+        </tr>
+      </table>
+
+    </main>
+    
+
+
+    <footer class="footer">
+      <div class="footer-content">
+          <div class="logo-section">
+  
+              <img src="assets/images/ecoenergy_logo_transparent.png" alt="Eco Energy Logo">
+  
+          </div>
+  
+          <div class="footer-section">
+  
+              <h3>Articles</h3>
+              <ul>
+                <li><a href="content_ST1.html">Renewable Energy</a></li>
+                <li><a href="content_ST3.html">Non-renewable Energy</a></li>
+                <li><a href="content_ST4.html">Emerging and Alternative Energy</a></li>
+                <li><a href="content_ST2.html">Why is Nuclear Energy Considered Clean Energy</a></li>
+              </ul>
+  
+          </div>
+
+
+  
+          <div class="footer-section">
+              <h3>Sustainability</h3>
+              <ul>
+                  <li><a href="https://www.globalgoals.org/" target="_blank">UN Global Goals</a></li>
+                  <li><a href="https://www.unep.org/topics/sustainable-development-goals/why-do-sustainable-development-goals-matter/goal-7-affordable" target="_blank">Clean and Affordable Energy</a></li>
+              </ul>
+          </div>
+  
+          <div class="footer-section">
+              <h3>About founders</h3>
+              <ul>
+                  <li><a href="team.html">Nadila Weerasekara</a></li>
+                  <li><a href="team.html">Amaya Pitawela</a></li>
+                  <li><a href="team.html">Gethmi Goonewardena</a></li>
+                  <li><a href="team.html">Mahima Sanketh</a></li>
+              </ul>
+          </div>
+  
+          <div class="footer-section">
+              <h3>Volunteer</h3>
+              <ul>
+                  <li><a href="#">Seminar</a></li>
+                  <li><a href="#">Workshops</a></li>
+              </ul>
+          </div>
+  
+          <div class="footer-section contact-section">
+              <h3>Contacts - HQ</h3>
+              <ul>
+                  <li>+45 93 250 207</li>
+                  <li>ecoenergy@gmail.lk</li>
+                  <li>Eco Energy Pvt(Ltd)</li>
+                  <li>Colombo, Sri Lanka</li>
+              </ul>
+          </div>
+  
+      </div>
+
+      
+  
+      <div class="footer-bottom">
+          <div class="footer-bottom-left">
+              <p>© 2025 - All rights reserved by Green Energy Group ApS. CVR no. 06459104/4</p>
+              <a href="#">Cookies</a>
+              <a href="#">Privacy policy</a>
+          </div>
+          
+      </div>
+  </footer>
+    <script src="navbar.js"></script>
+  </body>
+</html>

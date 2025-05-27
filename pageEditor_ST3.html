@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student 3 Editor</title>
+
+    <link rel="stylesheet" href="pageEditor.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <div class="nav-section">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/ecoenergy_logo_transparent.png" alt="eco energy logo">
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-items">
+                <li><a href="home.html">Home</a></li>
+                
+                <li class="dropdown">
+                    <a>Explore & More ▾</a>
+                    <div class="dropdown-content">
+                        <a href="feedback.html">Feedback</a>
+                        <a href="table.html">Table</a>
+                        <a href="team.html">Our Team</a>
+                        <a href="sitemap.html">Sitemap</a>
+                        <div class="sub-dropdown">
+                            <a>Articles ▾</a>
+                            <div class="sub-dropdown-content">
+                                <a href="content_ST1.html">Article 1</a>
+                                <a href="content_ST2.html">Article 2</a>
+                                <a href="content_ST3.html">Article 3</a>
+                                <a href="content_ST4.html">Article 4</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li><a href="volunteer.html">Volunteer</a></li>
+                
+                <li><a href="team.html">Team</a></li>
+            </ul>
+            
+            <div class="nav-buttons">
+                <a href="volunteer.html" class="btn btn-outline">Join Us</a>
+                <a href="profile.html" class="btn btn-primary">Dashboard</a>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="overlay"></div>
+    <div class="main">
+        <div class="user-details">
+            <div class="user-details-section card">
+                <img src="assets/images/gethmi.jpg" alt="profile">
+                <div class="user-meta-data">
+                    <p class="user-title">Gethmi Goonewardena</p>
+                    <p class="user-id">UOW ID - W2120165</p>
+                    <p class="user-code">IIT ID - 20240971</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <main>            
+                <section>
+                    <h2 id="team">Team Page</h2><br>
+                    <h3>Technical Description</h3>
+                    <p>Regarding the Html Techniques I used, semantic HTML tags like h1 tag for the main title and div tag for content structuring. Each member in our team is wrapped in a div class="team_Member" tag that shows the logical grouping of related content. I also added the a tag for easy navigation to individual student pages. Since the coursework PDF mentioned making interactive thumbnails accessible via keyboard, I added tabindex="0" for the team member containers.<br><br>
+                        The CSS techniques I used are Flexbox (display: flex; flex-wrap: wrap; justify-content: center;) for responsive and centered team member cards.
+                        Transition effects (transform: scale(1.1); opacity: 200;) for hover animations, adding visual feedback.
+                        Positioned the student details using position: absolute and controlled visibility through opacity and height transitions.</p><br> 
+                    
+                    <h3>Accessibility</h3>
+                    <p>I have used alt attributes for images, like for example alt="student_1_image" to make sure that screen readers can describe images to visually impaired users. I added tabindex="0" for team members to access easily, so users can navigate the page without a mouse. The difference between text (color: white) and background (rgba(0, 0, 0, 0.7)) ensures readability for users with low vision.
+                        Additionally, I used clear, descriptive labels like "Role: Student 1" labels to help users understand each team member’s role.</p><br>
+                    
+                        <button type="button" onclick="location.href='validation_ST3.html#teamVal'">Validation Page</button>
+                        <button type="button" onclick="location.href='team.html'">Team Page</button>
+                  
+                </section>
+
+                <section>
+                    <h2 id="feedback">Feedback Page</h2><br>
+                    <h3>Technical Description</h3>
+                    <p>The HTML Techniques I used for the feedback page are to make a good structure for my feedback page. Firstly, I used semantic HTML elements like fieldset and legend tags to group personal and feedback-related inputs, ensuring better form organization.
+                        I applied label tag elements with for attributes linked to corresponding input tag fields for improved usability.
+                        I added a datalist for the "User's Interest Level in Clean Energy" input to offer auto-suggestions.</p><br> 
+                    
+                    <h3>Accessibility</h3>
+                    <p>First of all, I used labels for every input field, helping screen readers identify elements.
+                        I added radio button groups with shared names like "feedback" and "satisfaction" to make sure that only one option can be selected at a time. I also
+                        included alt text for any future images like uploaded files and confirm button hover effects are visually clear.</p><br>
+                    
+
+                        <button type="button" onclick="location.href='validation_ST3.html#feedbackVal'">Validation Page</button>
+                        <button type="button" onclick="location.href='feedback.html'">Feedback Page</button>
+
+                  
+                </section>
+
+                <section>
+                    <h2 id="content">Content Page</h2><br>
+                    <h3>Technical Description</h3>
+                    <p>Regarding the content page, I used HTML Techniques such as adding semantic elements like h1, p, img, and div tags for structuring content.
+                        Flexbox is used for aligning author details and action icons such as like, share.<br><br>
+                        Regarding the CSS Techniques, I defined specific font sizes to 44px for titles, 18px for body text.
+                        I also added layouts like the main container, buttons, and for spacing, I used margins and padding to set a clean, spaced-out layout.</p><br> 
+                    
+                    <h3>Accessibility</h3>
+                    <p>The content page has multiple accessibility features like semantic elements such as heading tags and paragraph tags, which give clear content structure and help screen readers navigate the page.
+                       Also, images include alt attributes that offer text descriptions. The page layout used ensures a logical visual flow. These aspects provide a basic level of accessibility for my content page.</p><br>
+                    
+                    
+                       <button type="button" onclick="location.href='validation_ST3.html#contentVal'">Validation Page</button>
+                        <button type="button" onclick="location.href='content_ST3.html'">Content Page</button>
+
+
+                  
+                </section>
+
+                <section>
+                    <h2 id="challenge">Challenges and Lessons Learned</h2><br>
+                    <p>Until I finished the coursework, I faced different types of obstacles. One of them was searching through different free image downloading websites to find the most suitable images for the pages I had to make. It also took a lot of time for me to understand the codes and change them accordingly due to my lack of knowledge about CSS and JavaScript.
+                       However, I overcame this by learning those languages from YouTube and w3schools. I also struggled to finalize colors for the pages because my teammates had different opinions. Despite these problems, I successfully completed all tasks with the support and guidance of lecturers and team members.</p> 
+                </section>
+
+                <section>
+                    <h2 id="compliance">Compliance</h2><br>
+                    <p>My team and I have adhered to the Janet regulations for web publication. There is no transmission or creation of obscene, derogatory, or offensive material or materials of a threatening nature.
+                       We have not committed copyright infringement or used our website to hack or spam our users. We are well aware that we are under a legal obligation to do so.</p> 
+                </section>
+
+                <section>
+                    <h2 id="ref">References</h2><br>
+                    <ul class="ref">
+                        <li>pexels (2025) <i>pexels.</i> Available at: <a href="#">https://www.pexels.com/</a> (Last accessed: 9 March 2025).</li>
+                        <li>w3schools (2025)<i>w3schools.</i> Available at: <a href="#">https://www.w3schools.com/</a> (Last accessed: 9 March 2025).</li>
+                    </ul>
+                </section>
+
+                <p class="top"><a href="#top">Go top</a></p>
+            </main>
+
+            <aside>
+                <h3>Core pages developed:</h3>
+                <ul>
+                    <li>Student 3
+                        <ul> 
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#feedback">Feedback</a></li>
+                            <li><a href="#content">Content</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                    <li><a href="#compliance">Compliance</a></li>
+                    <li><a href="#ref">References</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="logo-section">
+        
+                    <img src="assets/images/ecoenergy_logo_transparent.png" alt="Eco Energy Logo">
+        
+                </div>
+        
+                <div class="footer-section">
+        
+                    <h3>Articles</h3>
+                    <ul>
+                        <li><a href="content_ST1.html">Renewable Energy</a></li>
+                        <li><a href="content_ST3.html">Non-renewable Energy</a></li>
+                        <li><a href="content_ST4.html">Emerging and Alternative Energy</a></li>
+                        <li><a href="content_ST2.html">Why is Nuclear Energy Considered Clean Energy</a></li>
+                    </ul>
+        
+                </div>
+        
+                <div class="footer-section">
+                    <h3>Sustainability</h3>
+                    <ul>
+                        <li><a href="https://www.globalgoals.org/" target="_blank">UN Global Goals</a></li>
+                        <li><a href="https://www.unep.org/topics/sustainable-development-goals/why-do-sustainable-development-goals-matter/goal-7-affordable" target="_blank">Clean and Affordable Energy</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>About founders</h3>
+                    <ul>
+                        <li><a href="team.html">Nadila Weerasekara</a></li>
+                        <li><a href="team.html">Amaya Pitawela</a></li>
+                        <li><a href="team.html">Gethmi Goonewardena</a></li>
+                        <li><a href="team.html">Mahima Sanketh</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>Volunteer</h3>
+                    <ul>
+                        <li><a href="#">Seminar</a></li>
+                        <li><a href="#">Workshops</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section contact-section">
+                    <h3>Contacts - HQ</h3>
+                    <ul>
+                        <li>+45 93 250 207</li>
+                        <li>ecoenergy@gmail.lk</li>
+                        <li>Eco Energy Pvt(Ltd)</li>
+                        <li>Colombo, Sri Lanka</li>
+                    </ul>
+                </div>
+        
+            </div>
+        
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <p>© 2025 - All rights reserved by Green Energy Group ApS. CVR no. 06459104/4</p>
+                    <a href="#">Cookies</a>
+                    <a href="#">Privacy policy</a>
+                </div>
+                
+            </div>
+        </footer>
+    </div>
+    <script src="navbar.js"></script>
+</body>
+</html>

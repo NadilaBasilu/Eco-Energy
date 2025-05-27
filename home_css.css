@@ -1,0 +1,429 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* for the scroll animation */
+
+@keyframes appear{
+    from{
+        scale: 0.8;
+        opacity: 0;
+    }
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+/* wind turbine video with text */
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-text span{
+    display: block;
+    width: 250px;
+    height: 2px;
+    background-color: white;
+    margin: 25px auto 25px;
+}
+
+/* for the headings with the yellow underline */
+
+.middle-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #12123D;
+    position: relative;
+    text-align: center;
+}
+
+.middle-title span {
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #F6C144;
+    margin: 0 auto 25px;
+}
+
+/* sponsor section */
+
+.not-card-div{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.not-card-div img{
+    width: 6%;
+    min-width: 50px;
+    height: auto;
+    margin: 10px 25px 25px 40px;
+    border-radius: 12px;
+    transition: transform 0.2s ease-in;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+
+.not-card-div img:hover{
+    transform: scale(1.1);
+}
+
+/* for the 5 renewable energy sources */
+
+.renewable-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 70px;
+    height: auto;
+    padding-bottom: 5%;
+    position: relative;
+    z-index: -1;
+}
+
+.image-card {
+position: relative;
+overflow: hidden;
+border-radius: 8px;
+width: 300px;
+}
+
+.image-card img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.5s ease;
+}
+
+.peeking-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    transition: 1s ease-in-out;
+    transform: translateX(-100%);
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.peeking-text p{
+    font-size: 12px;
+    padding: 20px;
+}
+
+.image-card:hover .peeking-text{
+    transform: translateX(0);
+    visibility: visible;
+}
+
+.image-card:hover img{
+    transform: scale(1.2);
+}
+
+#main {
+    padding: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    text-decoration: underline;
+}
+
+.peeking-text button{
+    padding: 5px 7px;
+    background-color: rgb(186, 186, 165);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.peeking-text button:hover{
+    background-color: rgb(218, 217, 205);
+}
+
+
+/* for the animated statistic section */
+
+.stats-section {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: 30px 50px;
+    border-radius: 12px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.stat-box {
+    flex: 1;
+    padding: 20px;
+}
+
+.stat-box h2 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.stat-box p {
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* for the about us and mission sections */
+
+.about-us{
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    z-index: -1;
+}
+
+.about-us-img{
+    width: 50%;
+    height: auto;
+    border-radius: 12px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 30px 20px 200px 0 lightgray;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    z-index: -1;
+}
+
+.about-us-text{
+    margin: 5%;
+    text-align: left;
+    color: #222;
+}
+
+.about-us-text p{
+    color: gray;
+    font-size: small;
+}
+
+/* for the feedback card section */
+
+.volunteer-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.feedback-card {
+    background: white;
+    padding: 5px;
+    margin: 30px 10px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    z-index: -1;
+}
+
+.stars {
+    margin-left: 70px;
+    color: blue;
+    font-size: 18px;
+}
+
+.feedback-text {
+    margin: 5px 5px;
+    font-size: 11px;
+    color: #333;
+}
+
+.feedback-user-info {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 7px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.user-info span {
+    font-size: 9px;
+    color: gray;
+}
+
+/* for the featured articles */
+
+
+.articles-section {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    margin: 0 20px 50px 20px;
+    z-index: -1;
+}
+
+.articles-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: left;
+    margin-top: 50px;
+    height: 380px;
+    width: 300px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.articles-content{
+    align-self: start;
+    margin-top: 15px;
+}
+
+.articles-content h3 a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #12123D;
+    margin-bottom: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.articles-content h3 a:hover{
+    color: rgb(171, 120, 0);
+}
+
+.articles-date {
+    font-size: 12px;
+    color: gray;
+}
+
+.articles-image {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    align-self: flex-end;
+}
+
+/* for the arrow links */
+
+#top {
+    position: fixed;
+    z-index: 99;
+    right: 3%;
+    top: 82%;
+}
+
+#bottom {
+    position: fixed;
+    z-index: 99;
+    right: 3%;
+    top: 90%;
+}
+
+.arrow img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+   
+    .overlay-text{
+        font-size: 10px;
+        margin-top: 20px;
+    }
+
+
+
+    /* Adjust stats section for mobile */
+    .stats-section {
+        margin: 30px 15px;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    /* Fix the about-us section for mobile */
+    .about-us {
+        flex-direction: column;
+    }
+    
+    .about-us-img {
+        width: 90%;
+        margin: 25px auto;
+    }
+    
+    /* Adjust the video container height */
+    .video-container {
+        height: 300px;
+    }
+    
+    /* Make sure container elements use full width */
+    .renewable-div, .not-card-div, .volunteer-section, .articles-section {
+        width: 100%;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,185 @@
+.main {
+  margin-top: 100px; 
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+main {
+  flex: 3;
+  width: 100%;
+}
+
+/* User details card styling */
+.user-details {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.user-details-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    margin: 18px 0px 24px;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+    max-width: 600px; /* Limit the card's max width */
+}
+
+.user-details-section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Ensure the image fills the circle */
+}
+
+.user-meta-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.user-title {
+    font-weight: bold;
+    font-size: 1.5rem; /* Enlarge the title */
+}
+
+.user-id, .user-code {
+    font-size: 1.2rem; /* Enlarge the ID and code */
+    color: #555; /* Slightly gray color for the data */
+}
+
+section img{
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+
+/* Professional link-style button */
+.btn-link {
+  text-decoration: none;
+  background-color: #000000; /* Green background */
+  color: white;
+  padding: 8px 15px;
+  margin: 0 0 20px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+  background-color: #3d3d3d; /* Darker green on hover */
+  cursor: pointer;
+}
+
+.btn-link:active {
+  background-color: #363326; /* Even darker green when clicked */
+}
+
+
+aside {
+  display: none;
+  flex: 1;
+  padding: 0px 15px;
+  margin-left: 20px;
+  position: sticky;
+  top: 150px; 
+  align-self: flex-start; 
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
+  background-color: white; 
+  border-left: 1px solid #eee;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.ref li {
+  list-style: none;
+  padding-bottom: 9px;
+}
+
+aside a {
+  text-decoration: none;
+}
+
+aside ul {
+  padding-left: 10px;
+}
+
+aside li {
+  padding-bottom: 4px;
+  padding-left: 10px;
+}
+
+.stud {
+  text-align: center;
+  line-height: 0;
+  background-color: #cbccc2ef;
+  color: white;
+  margin-top: 8px;
+}
+
+.top {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 100;
+}
+      
+.top a {
+  padding: 8px 18px;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.top a:hover {
+  border: 2px solid black;
+  background-color: white;
+  color: #000000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+@media (min-width : 768px) {
+  aside {
+      display: block;
+  }
+  
+}

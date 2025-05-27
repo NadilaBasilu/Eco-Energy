@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student 1 Page Editor</title>
+
+    <link rel="stylesheet" href="pageEditor.css">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="nav.css">
+     <link rel="stylesheet" href="footer.css">
+<body>
+    <div class="nav-section">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/ecoenergy_logo_transparent.png" alt="eco energy logo">
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-items">
+                <li><a href="home.html">Home</a></li>
+                
+                <li class="dropdown">
+                    <a>Explore & More ▾</a>
+                    <div class="dropdown-content">
+                        <a href="feedback.html">Feedback</a>
+                        <a href="table.html">Table</a>
+                        <a href="team.html">Our Team</a>
+                        <a href="sitemap.html">Sitemap</a>
+                        <div class="sub-dropdown">
+                            <a>Articles ▾</a>
+                            <div class="sub-dropdown-content">
+                                <a href="content_ST1.html">Article 1</a>
+                                <a href="content_ST2.html">Article 2</a>
+                                <a href="content_ST3.html">Article 3</a>
+                                <a href="content_ST4.html">Article 4</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li><a href="volunteer.html">Volunteer</a></li>
+                
+                <li><a href="team.html">Team</a></li>
+            </ul>
+            
+            <div class="nav-buttons">
+                <a href="volunteer.html" class="btn btn-outline">Join Us</a>
+                <a href="profile.html" class="btn btn-primary">Dashboard</a>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="overlay"></div>
+   <div class="main">
+               <div class="user-details">
+            <div class="user-details-section card">
+                <img src="assets/images/mahima_profile_image.png" alt="mahima sanketh profile image">
+                <div class="user-meta-data">
+                    <p class="user-title">Mahima Sanketh Mallika Ararchchi</p>
+                    <p class="user-id">UOW ID - W2120232</p>
+                    <p class="user-code">IIT ID - 20231430</p>
+                </div>
+            </div>
+        </div>
+    
+    <div class="container">
+
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="splash">Splash Screen</h2>
+                    <h3>Technical Description</h3>
+                        <p>
+                            The Splash Screen features a background video overlayed with text, a button, and a loading animation. Upon loading, the page automatically redirects after a few seconds. The layout is responsive, and Flexbox is used to ensure that all elements adjust correctly across various screen sizes. The animation for the text is achieved using CSS keyframes, combined with @keyframes, transform, and animation properties to create a smooth fade-in effect. The three-dot loading animation is implemented using span elements and the nth-child pseudo-class, ensuring a clean and smooth visual appearance.
+                        </p><br>
+
+                    <h3>Accessibility</h3>
+                        <p>
+                            To ensure the page is accessible, units like px, vh, %, and rem are used for the layout. The lang attribute is set to "en", and ARIA roles are applied to elements. The page is compatible with all modern web browsers, offering a consistent experience for users with visual impairments. 
+                        </p><br>
+
+                    <!-- Update the path to link the Page Editor with the Splash Screen -->
+                    <h3>Link to the validation page and the Splash Screen</h3><br>
+
+                    <button type="button" onclick="location.href='validation_ST1.html#splashValidation'">Validation Page</button>
+                    <button type="button" onclick="location.href='splash.html'">Splash Screen</button>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Volunteer Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>Technical Description
+                            The Volunteer page is designed to encourage potential volunteers to join and contribute to various causes. The layout is fully responsive, utilizing Flexbox for efficient content arrangement across different screen sizes. Key sections include a volunteer sign-up form with interactive buttons and a dynamic statistics section where the counters animate as the user scrolls, providing an engaging visual effect. JavaScript powers the animated counters, and elements like buttons and dropdowns feature smooth hover effects for better interactivity. A fade-in animation enhances the user experience, drawing attention to important sections. The page also includes expandable review cards that users can interact with, revealing more details about past volunteer experiences. Form validation is built into the registration process to ensure accurate data entry. Additionally, the page is designed to be visually appealing while maintaining simplicity and usability.
+                        </p><br>
+
+                    <h3>Accessibility</h3>
+                        <p>The Volunteer page is built with accessibility in mind, ensuring a seamless experience for all users, including those with disabilities. Browser-supported units like px, vh, %, and rem are used to achieve a responsive design that adapts to different devices and screen sizes. The lang attribute is set to "en", and alt text is provided for images to assist visually impaired users relying on screen readers. The page leverages ARIA labels and semantic HTML elements like div, section, and form to create a structured and accessible layout. The inclusion of interactive elements such as the review cards and statistics counters follows accessibility best practices, ensuring that they are easily navigable by keyboard and compatible with assistive technologies.
+                        </p><br>
+
+                    <!-- Update the path to link the Page Editor with the Volunteer page -->
+                    <h3>Link to the validation page and the home page</h3><br>
+
+                    <button type="button" onclick="location.href='validation_ST1.html#volunteerValidation'">Validation Page</button>
+                    <button type="button" onclick="location.href='volunteer.html'">Volunteer Page</button>
+
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>
+                            The Content page consists of icons placed between horizontal lines, which serve a stylistic purpose but are not interactive. The layout is responsive, leveraging Flexbox to ensure the page adapts to different screen sizes. The page is simple and uses no complex properties, making it lightweight and efficient. The content is divided into sections, and each section contains relevant information with appropriate images. The icons are visually appealing and provide a clean look without adding interactive elements.
+                        </p><br>
+
+                    <h3>Accessibility</h3>
+                        <p>The page is designed to be fully accessible with the use of responsive units like px, % and rem. The lang attribute is set to English, ensuring that screen readers can interpret the content correctly. The alt text is added for images to provide context for visually impaired users, and ARIA labels are applied to ensure smooth navigation.
+                        </p><br>
+
+                    <h3>Link to the validation page and the content page</h3><br>
+
+                    <button type="button" onclick="location.href='validation_ST1.html#contentValidation'">Validation Page</button>
+                    <button type="button" onclick="location.href='content_ST1.html'">Content Page</button>
+
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2><br>
+                    <p>
+                       One of the main challenges I faced during the development of this project was integrating all the elements seamlessly into a responsive layout. Although Flexbox proved to be a valuable tool for managing the layout, I encountered difficulties while fine-tuning the animations and form validations. Additionally, collaborating with my team on the Volunteer page helped me learn how to effectively manage JavaScript to create interactive statistics.
+                    </p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2><br>
+                    <p>
+                        Our team has ensured that the web pages adhere to web publishing regulations, including ensuring that no offensive or illegal content is displayed. We also made sure that the site complies with accessibility standards and that all external content, such as images, is properly credited. The website respects intellectual property rights and does not infringe upon any copyrights.
+                    </p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2><br>
+                    <ul class="ref">
+                        <li>Unsplash (2025) <i>Unsplash.</i> Available at: <a href="https://unsplash.com/"  target="_blank">https://unsplash.com/</a> (Accessed: 27 March 2025)</li>
+                        <li>Pixabay (2025) <i>Pixabay.</i> Available at: <a href="https://pixabay.com/" target="_blank">https://pixabay.com/</a> (Accessed: 24 March 2025)</li>
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="https://www.istockphoto.com/" target="_blank">https://www.istockphoto.com/</a> (Accessed: 24 FEB 2025)</li>
+                        <li>W3C <i>Markup Validation Service</i>. Available at: <a href="https://validator.w3.org/" target="_blank">https://validator.w3.org/</a> (Accessed: 8 March 2025).</li>
+                        <li>W3Schools. Available at: <a href="https://www.w3schools.com/css/" target="_blank">https://www.w3schools.com/css/</a> (Accessed: 20 FEB 2025).</li>
+                        <li>GeeksforGeeks (2025) <i>GeeksforGeeks.</i> Available at: <a href="https://www.geeksforgeeks.org/" target="_blank">https://www.geeksforgeeks.org/</a> (Accessed: 1 March 2025)</li>
+                    </ul>
+                       
+
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+
+            <h3>Core pages developed:</h3>
+
+            <ul class="top-level-ul">
+
+                <li>Student 1</li>
+                    <ul> 
+                        <li><a href="#splash">Splash Screen</a></li>
+                        <li><a href="#volunteer">Volunteer Page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+               
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+        
+       
+    </div>   
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="logo-section">
+    
+                <img src="assets/images/ecoenergy_logo_transparent.png" alt="Eco Energy Logo">
+    
+            </div>
+    
+            <div class="footer-section">
+    
+                <h3>Articles</h3>
+                <ul>
+                    <li><a href="content_ST1.html">Renewable Energy</a></li>
+                  <li><a href="content_ST3.html">Non-renewable Energy</a></li>
+                  <li><a href="content_ST4.html">Emerging and Alternative Energy</a></li>
+                  <li><a href="content_ST2.html">Why is Nuclear Energy Considered Clean Energy</a></li>
+                </ul>
+    
+            </div>
+    
+            <div class="footer-section">
+                <h3>Sustainability</h3>
+                <ul>
+                    <li><a href="https://www.globalgoals.org/" target="_blank">UN Global Goals</a></li>
+                    <li><a href="https://www.unep.org/topics/sustainable-development-goals/why-do-sustainable-development-goals-matter/goal-7-affordable" target="_blank">Clean and Affordable Energy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>About founders</h3>
+                <ul>
+                    <li><a href="team.html">Nadila Weerasekara</a></li>
+                    <li><a href="team.html">Amaya Pitawela</a></li>
+                    <li><a href="team.html">Gethmi Goonewardena</a></li>
+                    <li><a href="team.html">Mahima Sanketh</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Volunteer</h3>
+                <ul>
+                    <li><a href="#">Seminar</a></li>
+                    <li><a href="#">Workshops</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-section">
+                <h3>Contacts - HQ</h3>
+                <ul>
+                    <li>+45 93 250 207</li>
+                    <li>ecoenergy@gmail.lk</li>
+                    <li>Eco Energy Pvt(Ltd)</li>
+                    <li>Colombo, Sri Lanka</li>
+                </ul>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <p>© 2025 - All rights reserved by Green Energy Group ApS. CVR no. 06459104/4</p>
+                <a href="#">Cookies</a>
+                <a href="#">Privacy policy</a>
+            </div>
+            
+        </div>
+    </footer>
+     
+    <script src="navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="home_css.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>home page</title>
+</head>
+<body>
+
+    <div class="nav-section">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/images/ecoenergy_logo_transparent.png" alt="eco energy logo">
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-items">
+                <li><a href="home.html">Home</a></li>
+                
+                <li class="dropdown">
+                    <a>Explore & More ▾</a>
+                    <div class="dropdown-content">
+                        <a href="feedback.html">Feedback</a>
+                        <a href="table.html">Table</a>
+                        <a href="team.html">Our Team</a>
+                        <a href="sitemap.html">Sitemap</a>
+                        <div class="sub-dropdown">
+                            <a>Articles ▾</a>
+                            <div class="sub-dropdown-content">
+                                <a href="content_ST1.html">Article 1</a>
+                                <a href="content_ST2.html">Article 2</a>
+                                <a href="content_ST3.html">Article 3</a>
+                                <a href="content_ST4.html">Article 4</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <li><a href="volunteer.html">Volunteer</a></li>
+                
+                <li><a href="team.html">Team</a></li>
+            </ul>
+            
+            <div class="nav-buttons">
+                <a href="volunteer.html" class="btn btn-outline">Join Us</a>
+                <a href="profile.html" class="btn btn-primary">Dashboard</a>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="overlay"></div>
+    <!-- please except for the links, don't change anyting without telling me -->
+
+    <!-- wind turbine video and the text on it -->
+
+    <div class="video-container" id="home-top">
+
+        <video autoplay muted loop>
+            <source src="assets/videos/20003753-uhd_3840_2160_60fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="overlay-text">
+            <span></span>
+
+            <h1>CREATING A BRIGHTER FUTURE</h1><br>
+            <p>
+                The modern world depend highly on electricity.<br>
+                But why should it come at the cost of our planet. We aim to educate<br>
+                and work toward a world of renewable energy.
+            </p>
+
+            <span></span>
+        </div>
+    </div>
+
+    <!-- the sponsors section -->
+
+    <div class="not-card-div">
+        <br><br>
+        <h2 class="middle-title">Our Sponsors<span></span></h2>
+
+        <img src="assets/images/Canadian_Solar_Inc.png" alt="Canadian Solar Inc. logo">
+        <img src="assets/images/Constellation_Energy_Corporation.png" alt="Constellation Energy Corporation logo">
+        <img src="assets/images/UN_logo.png" alt="un logo">
+        <img src="assets/images/Algonquin_Power_&_Utilities_Corp.png" alt="Algonquin Power & Utilities Corp. logo">
+        <img src="assets/images/DAQO_New_Energy_Corp.png" alt="DAQO New Energy Corp. logo">
+    </div>
+
+    <h2 class="middle-title">Some Renewable Options<span></span></h2>
+
+    <!-- the 5 renewable energy cards -->
+    <!-- when linking the button to the content page make sure it goes to the sub topic -->
+
+    <div class="renewable-div">
+
+        <div class="image-card">
+            <img src="assets/images/solar-panel-card.png" alt="solar panel">
+
+            <div class="peeking-text">
+                <h2>Solar Energy</h2>
+                <p>
+                    Solar energy is the power harnessed from the sun's radiation 
+                    using photovoltaic cells or solar thermal systems to generate 
+                    electricity or heat.<br><br>
+                    <!-- link the solar energy part of the renewable energy article -->
+                    <button type="button" onclick="location.href='content_ST1.html'">see more</button>
+
+                </p>
+            </div>
+        </div>
+
+        <div class="image-card">
+            <img src="assets/images/wind-turbine-card.png" alt="wind turbine">
+
+            <div class="peeking-text">
+                <h2>Wind Energy</h2>
+                <p>
+                    Wind energy is the conversion of kinetic energy from 
+                    wind into mechanical power or electricity using wind turbines.<br><br>
+                    <!-- link the wind energy part of the renewable energy article -->
+                    <button type="button" onclick="location.href='content_ST1.html'">see more</button>
+
+                </p>
+            </div>
+        </div>    
+
+        <div class="image-card">
+            <img src="assets/images/wave-energy-2-card.png" alt="wave energy">
+
+            <div class="peeking-text">
+                <h2>Wave Energy</h2>
+                <p>
+                    Wave energy captures the movement of ocean waves 
+                    to generate electricity through specialized wave 
+                    energy converters.<br><br>
+                    <!-- link the wave energy part of the renewable energy article -->
+                    <button type="button" onclick="location.href='content_ST1.html'">see more</button>
+
+                </p>
+            </div>
+        </div>   
+
+        <div class="image-card">
+            <img src="assets/images/hydropower-2-card.png" alt="hydropower plant">
+
+            <div class="peeking-text">
+                <h2>Hydropower</h2>
+                <p>
+                    Biogas energy is produced by the anaerobic digestion of organic waste, 
+                    generating methane-rich gas that can be used for electricity, 
+                    heating, or fuel.<br><br>
+                    <!-- link the hydropower energy part of the renewable energy article -->
+                    <button type="button" onclick="location.href='content_ST1.html'">see more</button>
+
+                </p>
+            </div>
+        </div>   
+
+        <div class="image-card">
+            <img src="assets/images/bio-gas-card.png" alt="biogas plant">
+
+            <div class="peeking-text">
+                <h2>Biogas Energy</h2>
+                <p>
+                    Biogas energy is produced by the anaerobic digestion of organic waste, 
+                    generating methane-rich gas that can be used for electricity, 
+                    heating, or fuel.<br><br>
+                    <!-- link the biogas energy part of the renewable energy article -->
+                    <button type="button" onclick="location.href='content_ST1.html'">see more</button>
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- the animated stat section -->
+
+    <div class="stats-section">
+        <div class="stat-box">
+            <h2>70%</h2>
+            <p><strong>Solar energy</strong> accounts for <strong>over 70%</strong> 
+                of new global power capacity additions in 2023
+            </p>
+        </div>
+
+        <div class="stat-box">
+            <h2>47%</h2>
+            <p>
+                <strong>hydropower</strong> is now the <strong>second largest renewable 
+                electricity</strong> technology by capacity. However, it still remains the <strong>largest source of 
+                renewable power generation</strong>, with <strong>47%</strong> share in global production.
+            </p>
+        </div>
+        <div class="stat-box">
+            <h2>29,500 TWh</h2>
+            <p><strong>Wave energy</strong> has an estimated global potential of 
+                <strong>29,500 TWh per year</strong>, which could cover the entire 
+                world's electricity demand.
+            </p>
+        </div>
+    </div>
+
+    <!-- about us and our mission section -->
+    <!-- i tried using css grid and flex box but didn't work, i didn't have time so I used the 
+         a figure with them in the wanted position. pls don't change it  -->
+
+    <div class="about-us">
+
+        <img class="about-us-img" src="assets/images/about-us-image.png" alt="about us image">
+
+        <div class="about-us-text">
+
+            <h6>A BIT</h6>
+            <h1><strong>ABOUT US</strong></h1><br>
+
+            <p>
+                Welcome to our website! We are dedicated to helping individuals, businesses, 
+                and communities discover and adopt renewable energy sources. Our goal is to 
+                provide reliable, easy-to-understand information and practical solutions to 
+                help make the transition to clean energy simple and accessible. By supporting 
+                the shift to renewable energy, we aim to reduce environmental impact, promote 
+                sustainability, and create a greener, more energy-independent future for everyone.
+            </p>
+        </div>
+    </div>
+
+    <div class="about-us">
+
+        <div class="about-us-text">
+
+            <h6>A BIT</h6>
+            <h1><strong>OUR MISSION</strong></h1><br>
+
+            <p>
+                To empower individuals, businesses, and communities by providing accessible, 
+                reliable, and innovative information and solutions for adopting renewable energy. 
+                We strive to accelerate the global transition to sustainable energy, reduce 
+                environmental impact, and promote energy independence for a cleaner, greener future
+            </p>
+
+        </div>
+
+        <img class="about-us-img" src="assets/images/about-us-image-2.png" alt="about us image">
+    </div>
+
+    <!-- feedback section -->
+
+    <h2 class="middle-title">Voices of Our Members<span></span></h2>
+
+    <div class="volunteer-section">
+
+        <div class="feedback-card">
+
+            <div class="feedback-user-info">
+                <img src="assets/images/user1-icon.jpg" alt="User Image" class="user-avatar">
+                <div class="user-info">
+                    <strong>Wúmíng Shi</strong>
+                    <span>Quality Assurance Officer</span>
+                </div>
+    
+                <div class="stars">
+                    &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+            </div>
+        
+            <p class="feedback-text"> 
+                Nice work on your website design. It was interactive and accessible.
+                the articles were very informing.
+            </p>
+        </div>
+    
+        <div class="feedback-card">
+    
+            <div class="feedback-user-info">
+                <img src="assets/images/user6-icon.jpg" alt="User Image" class="user-avatar">
+                <div class="user-info">
+                    <strong>Jan Jansen</strong>
+                    <span>Senior Market Architect</span>
+                </div>
+    
+                <div class="stars">
+                    &#9733; &#9733; &#9733; &#9733; &#9734;
+                </div>
+            </div>
+        
+            <p class="feedback-text">
+                Good work!
+            </p>
+        </div>
+    
+        <div class="feedback-card">
+    
+            <div class="feedback-user-info">
+                <img src="assets/images/user5-icon.jpg" alt="User Image" class="user-avatar">
+                <div class="user-info">
+                    <strong>Yamada Hanako</strong>
+                    <span>Marine Biologist</span>
+                </div>
+    
+                <div class="stars">
+                    &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+            </div>
+        
+            <p class="feedback-text">
+                I am curently working in a project that is centered around capturing 
+                wave energy, and I was thrilled to see it being respresented here as it 
+                is not a well know method. 5 stars from me!
+            </p>
+        </div>
+    
+        <div class="feedback-card">
+    
+            <div class="feedback-user-info">
+                <img src="assets/images/user4-icon.jpg" alt="User Image" class="user-avatar">
+                <div class="user-info">
+                    <strong>Jhon doe</strong>
+                    <span>Environmental Scientist</span>
+                </div>
+    
+                <div class="stars">
+                    &#9733; &#9733; &#9733; &#9734; &#9734;
+                </div>
+            </div>
+        
+            <p class="feedback-text">
+                Very educational. Keep up the good work.
+            </p>
+        </div>
+    
+        <div class="feedback-card">
+    
+            <div class="feedback-user-info">
+                <img src="assets/images/user2-icon.jpg" alt="User Image" class="user-avatar">
+                <div class="user-info">
+                    <strong>Erika Mustermann</strong>
+                    <span>Social Media Manager</span>
+                </div>
+    
+                <div class="stars">
+                    &#9733; &#9733; &#9733; &#9733; &#9733;
+                </div>
+            </div>
+        
+            <p class="feedback-text">
+                I attended one of their workshop. It was both 
+                very engaging, and informative. I enjoyed it a lot. &#128522;
+            </p>
+        </div>
+    
+        <div class="feedback-card">
+    
+            <div class="feedback-user-info">
+                <img src="assets/images/user5-icon.jpg" alt="User Image" class="user-avatar">
+                <div class="user-info">
+                    <strong>Juan Perez</strong>
+                    <span>Student</span>
+                </div>
+    
+                <div class="stars">
+                    &#9733; &#9733; &#9733; &#9734; &#9734;
+                </div>
+            </div>
+        
+            <p class="feedback-text">
+                The website is nice. it was very helpful.
+            </p>
+        </div>
+    
+        <div class="feedback-card">
+    
+            <div class="feedback-user-info">
+                <img src="assets/images/user4-icon.jpg" alt="User Image" class="user-avatar">
+                <div class="user-info">
+                    <strong>Fulan AlFulani</strong>
+                    <span>Sales Marketing Manager</span>
+                </div>
+    
+                <div class="stars">
+                    &#9733; &#9733; &#9733; &#9733; &#9734;
+                </div>
+            </div>
+        
+            <p class="feedback-text">
+                Keep up the good work!
+            </p>
+        </div>
+    
+        <div class="feedback-card">
+    
+            <div class="feedback-user-info">
+                <img src="assets/images/user3-icons.jpg" alt="User Image" class="user-avatar">
+                <div class="user-info">
+                    <strong>Māra Paraudziņa</strong>
+                    <span>Medical Officer</span>
+                </div>
+    
+                <div class="stars">
+                    &#9733; &#9733; &#9733; &#9734; &#9734;
+                </div>
+            </div>
+        
+            <p class="feedback-text">
+                I feel optimistic already.
+            </p>
+        </div>
+    </div>
+
+    <!-- the 4 content pages -->
+
+    <div class="articles" id="home-down">
+        
+        <h2 class="middle-title">Featured articles <span></span></h2>
+
+        <section class="articles-section">
+
+            <div class="articles-card">
+                <div class="articles-content">
+                    <!-- link the renewable energy article -->
+                    <h3><a href="content_ST1.html">Renewable energy? What is that?</a></h3>
+                    <!-- update date from the content page -->
+                    <p class="articles-date">March 7, 2025</p>
+                </div>
+                <img src="assets/images/picture2.jpg" alt="hydropower dam" class="articles-image">
+            </div>
+
+            <div class="articles-card">
+                <div class="articles-content">
+                    <!-- link non-renewable energy article -->
+                    <h3><a href="content_ST3.html">Energy sources that will be the end of us. What are non-renewable energy?</a></h3>
+                    <!-- update date from the content page -->
+                    <p class="articles-date">March 8, 2025</p>
+                </div>
+                <img src="assets/images/non-renewable.jpg" alt="hydropower dam" class="articles-image">
+            </div>
+
+            <div class="articles-card">
+                <div class="articles-content">
+                    <!-- link the new emerging and alternative energy article -->
+                    <h3><a href="content_ST4.html">Future prospects of clean energy; New emerging alternative energy sources.</a></h3>
+                    <!-- update date from the content page -->
+                    <p class="articles-date">March 7, 2025</p>
+                </div>
+                <img src="assets/images/pic1.jpg" alt="hydropower dam" class="articles-image">
+            </div>
+
+            <div class="articles-card">
+                <div class="articles-content">
+                    <!-- link the why is nuclear energy clean energy article -->
+                    <h3><a href="content_ST2.html">How is nuclear energy clean energy when it's not renewable?</a></h3>
+                    <p class="articles-date">Apr 3 2024</p>
+                </div>
+                <img src="assets/images/nuclear-card.jpg" alt="Sunset with wind turbines" class="articles-image">
+            </div>
+        </section>
+    </div>
+
+    <!-- the arrow buttons -->
+
+    <a id="top" class="arrow" href="#home-top">
+        <img src="assets/images/arrow-up.jpg" alt="Go to the top">
+    </a>
+
+    <a id="bottom" class="arrow" href="#home-down">
+        <img src="assets/images/arrow-down.jpg" alt="Go to the bottom">
+    </a>
+
+        <footer class="footer">
+      <div class="footer-content">
+          <div class="logo-section">
+  
+              <img src="assets/images/ecoenergy_logo_transparent.png" alt="Eco Energy Logo">
+  
+          </div>
+  
+          <div class="footer-section">
+  
+              <h3>Articles</h3>
+              <ul>
+                  <li><a href="content_ST1.html">Renewable Energy</a></li>
+                  <li><a href="content_ST3.html">Non-renewable Energy</a></li>
+                  <li><a href="content_ST4.html">Emerging and Alternative Energy</a></li>
+                  <li><a href="content_ST2.html">Why is Nuclear Energy Considered Clean Energy</a></li>
+              </ul>
+  
+          </div>
+  
+          <div class="footer-section">
+              <h3>Sustainability</h3>
+              <ul>
+                  <li><a href="https://www.globalgoals.org/" target="_blank">UN Global Goals</a></li>
+                  <li><a href="https://www.unep.org/topics/sustainable-development-goals/why-do-sustainable-development-goals-matter/goal-7-affordable" target="_blank">Clean and Affordable Energy</a></li>
+              </ul>
+          </div>
+  
+          <div class="footer-section">
+              <h3>About founders</h3>
+              <ul>
+                  <li><a href="team.html">Nadila Weerasekara</a></li>
+                  <li><a href="team.html">Amaya Pitawela</a></li>
+                  <li><a href="team.html">Gethmi Goonewardena</a></li>
+                  <li><a href="team.html">Mahima Sanketh</a></li>
+              </ul>
+          </div>
+  
+          <div class="footer-section">
+              <h3>Volunteer</h3>
+              <ul>
+                  <li><a href="#">Seminar</a></li>
+                  <li><a href="#">Workshops</a></li>
+              </ul>
+          </div>
+  
+          <div class="footer-section contact-section">
+              <h3>Contacts - HQ</h3>
+              <ul>
+                  <li>+45 93 250 207</li>
+                  <li>ecoenergy@gmail.lk</li>
+                  <li>Eco Energy Pvt(Ltd)</li>
+                  <li>Colombo, Sri Lanka</li>
+              </ul>
+          </div>
+  
+      </div>
+  
+      <div class="footer-bottom">
+          <div class="footer-bottom-left">
+              <p>© 2025 - All rights reserved by Green Energy Group ApS. CVR no. 06459104/4</p>
+              <a href="#">Cookies</a>
+              <a href="#">Privacy policy</a>
+          </div>
+          
+      </div>
+  </footer>
+
+    <script src="home_js.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>
